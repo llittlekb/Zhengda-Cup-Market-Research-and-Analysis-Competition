@@ -6,6 +6,9 @@ from collections import Counter
 workbook = openpyxl.load_workbook(r'C:\Users\86138\Desktop\京东数据抓取.xlsx')
 worksheet = workbook.active
 
+# 加载自定义词典文件(在分词的时候加入一些专有名词让jieba库的分词更加准确)
+# jieba.load_userdict('custom_dict.txt')
+
 # 选择要处理的列
 column = 'A'  # 假设要处理的列是A列
 
